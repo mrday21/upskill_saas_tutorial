@@ -9,12 +9,14 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <a href="/" class="navbar-brand"><icon class="fa fa-users"></icon> DevMatch</a>
+      <%= link_to "/", class: "navbar-brand" do %>
+      <icon class="fa fa-users"></icon>
+      DevMatch
+      <% end %>
       <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item active">
@@ -26,8 +28,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+          <li class="nav-item"><%= link_to "About", "/about" %>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
