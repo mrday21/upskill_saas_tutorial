@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <%= link_to "/", class: "navbar-brand" do %>
+      <%= link_to root_path, class: "navbar-brand" do %>
       <icon class="fa fa-users"></icon>
       DevMatch
       <% end %>
@@ -28,7 +28,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-          <li class="nav-item"><%= link_to "About", "/about" %>
+          <li class="nav-item"><%= link_to "About", about_path %>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
