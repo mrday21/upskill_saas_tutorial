@@ -42,9 +42,9 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   font-weight: 800;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand,
-.navbar-default .navbar-brand, 
-.navbar-default .navbar-brand:focus  {
+.navbar-light .navbar-nav > li > a, .navbar-light .navbar-brand,
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-brand:focus  {
     color: white;
     &:hover {
     color: white;
