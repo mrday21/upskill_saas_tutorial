@@ -37,6 +37,10 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   border: none;
 }
 
+.nav.navbar-nav {
+  float: right;
+}
+
 .navbar-brand {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
@@ -53,6 +57,12 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
     }
 }
 
+
+
+.navbar-toggler {
+  float: right;
+}
+
 // Home Page Styles
 .home-callout {
   color: white;
@@ -60,3 +70,4 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
