@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
@@ -37,8 +37,13 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   border: none;
 }
 
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right:15px;
+}
+
 .nav.navbar-nav {
-  float: right;
+  float: inherit;
 }
 
 .navbar-brand {
@@ -46,9 +51,9 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   font-weight: 800;
 }
 
-.navbar-light .navbar-nav > li > a, .navbar-light .navbar-brand,
-.navbar-light .navbar-brand, 
-.navbar-light .navbar-brand:focus  {
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand,
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-brand:focus, .collapse .navbar-collapse  {
     color: white;
     &:hover {
     color: white;
@@ -57,7 +62,10 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
     }
 }
 
-
+.navbar-toggler-icon {
+    float: right;
+    background-color: white;
+}
 
 .navbar-toggler {
   float: right;
