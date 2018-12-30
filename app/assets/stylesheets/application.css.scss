@@ -37,8 +37,8 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
   border: none;
 }
 
-.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    padding-left: 0;
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
     padding-right:15px;
 }
 
@@ -62,13 +62,24 @@ background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, F
     }
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    border: 2px solid white;
+}
+
 .navbar-toggler-icon {
     float: right;
     background-color: white;
 }
 
-.navbar-toggler {
-  float: right;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: white;
+    background-color: transparent;
+    opacity: 0.75;
 }
 
 // Home Page Styles
