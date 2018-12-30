@@ -9,10 +9,10 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <%= link_to root_path, class: "navbar-brand" do %>
-      <icon class="fa fa-users"></icon>
-      DevMatch
-      <% end %>
+        <%= link_to root_path, class: "navbar-brand" do %>
+        <icon class="fa fa-users"></icon>
+        DevMatch
+        <% end %>
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
           <span class="sr-only">Toggle Navigation</span>
@@ -24,21 +24,23 @@
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)
+            </span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <%= link_to "Contact Us", new_contact_path %>
           </li>
           <li class="nav-item">
             <%= link_to "About", about_path %>
           </li>
         </ul>
       </div>
-      
     </nav>
+    
+    
       <%= yield %>
   </body>
 </html>
