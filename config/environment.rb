@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'infinite-waters-33434.herokuapp.com',
   :authentication => :plain,
 }
-ActionMailer::Base.delivery_method = :smpt
+ActionMailer::Base.delivery_method = :smtp
