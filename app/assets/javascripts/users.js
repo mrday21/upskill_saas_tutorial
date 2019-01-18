@@ -17,7 +17,7 @@ $(document).on('turbolinks:load', function(){
     var ccNum = $('#card_number').val(),
       cvcNum = $('#card_code').val(),
       expMonth = $('#card_month').val(),
-      expYear = $('card_year').val();
+      expYear = $('#card_year').val();
       
     //Use Stripe JS library to check for card errors.
     var error = false;
@@ -35,7 +35,7 @@ $(document).on('turbolinks:load', function(){
     }
     
     //Validate expiration date.
-    if(!Stripe.card.validateExpiry(expMonth,expYear)) {
+    if(!Stripe.card.validateExpiry(expMonth, expYear)) {
       error = true;
       alert("The expiration date appears to be invalid!");
     }
@@ -44,17 +44,16 @@ $(document).on('turbolinks:load', function(){
       //If there are card errors don't send to Stripe.
       signupBtn.prop('disabled', false).val("Sign Up");
     } else {
-    //Send card info to Stripe.
-    Stripe.createToken({
-      number: ccNum,
-      cvc: cvcNum,
-      exp_month: expMonth,
-      exp_year: expYear
-    }, stripeResponseHandler);
+      //Send card info to Stripe.
+      Stripe.createToken({
+        number: ccNum,
+        cvc: cvcNum,
+        exp_month: expMonth,
+        exp_year: expYear
+      }, stripeResponseHandler);
     }
   
-    
-     return false;
+  return false;
   });
 
 
